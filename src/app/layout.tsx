@@ -1,8 +1,16 @@
 import { ReactNode } from 'react';
 import './globals.css'
+import { Metadata } from 'next';
 
 type Props = {
   children: ReactNode
+}
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s - B7Web',
+    default: 'B7Web'
+  }
 }
 
 const Layout = ({ children }: Props) => {

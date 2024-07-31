@@ -1,9 +1,14 @@
 import { Post } from "@/types/Post"
+import { Metadata } from "next"
 
 type Props = {
   params: {
     postId: string
   }
+}
+
+export const metadata: Metadata = {
+  title: 'Blog'
 }
 
 const Page = async ({ params }: Props) => {
